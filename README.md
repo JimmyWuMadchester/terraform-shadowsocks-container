@@ -48,7 +48,23 @@ public_ips = [
 ss_port = "6443"
 ```
 
-5. Destroy the resources
+5. Manage services using Azure Cloud Shell
+
+```bash
+# Add custom ss commands
+source ss-commands.sh
+
+# Start
+ssu uk
+
+# Stop
+ssd uk
+
+# Restart
+ssr uk
+```
+
+6. Destroy the resources
 
 ```bash
 terraform destroy
