@@ -31,7 +31,7 @@ resource "azurerm_container_group" "cg" {
   location            = each.key
   resource_group_name = azurerm_resource_group.rg.name
   ip_address_type     = "public"
-  dns_name_label      = var.dns_name_label
+  dns_name_label      = "${var.dns_name_label}${each.key}"
   os_type             = "Linux"
 
   container {
