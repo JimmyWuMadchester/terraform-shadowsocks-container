@@ -8,6 +8,7 @@ Terraform configurations for creating Azure containers as Shadowsocks servers
 
 ```bash
 terraform init
+az login
 terraform plan -out=testplan
 ```
 
